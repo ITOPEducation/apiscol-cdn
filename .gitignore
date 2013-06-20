@@ -10,6 +10,6 @@ tmp/**/*
 *.tmp
 *.bak
 *.swp
-.classpath
+.buildpath
 .settings/
 *.launch
