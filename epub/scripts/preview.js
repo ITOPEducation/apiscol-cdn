@@ -1,5 +1,4 @@
-var currentView = "001";
-var $ubzPreview;
+var $epubPreview;
 function deactivatePreview() {
 };
 function reactivatePreview(idPreview) {
@@ -9,10 +8,8 @@ function activatePreview(idPreview) {
 	$previewArea = $epubPreview.closest(".preview-area");
 	$epubPreview.show();
 	$epubPreview.find("monocle-")
-	Monocle.Reader('monocle-' + idPreview, bookData, {}, function(reader) {
-		reader.moveTo({
-			page : 3
-		});
+	Monocle.Reader( idPreview.replace("preview", "monocle"), bookData, {}, function(reader) {
+		
 	});
 	$previewArea.addClass("activated");
 }
