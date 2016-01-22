@@ -6,7 +6,7 @@ function reactivatePreview(idPreview) {
 	player.play();
 };
 function activatePreview(idPreview) {
-	videojs.options.flash.swf = "http://apiscol.crdp-versailles.fr/cdn/video-js/video-js.swf" 
+	videojs.options.flash.swf = "http://apiscol.cdn.local/cdn/video-js/video-js.swf" 
 	createStyleSheetLinkTag("video-js/video-js.min.css");
 	$video = $("#" + idPreview);
 	var videoURL = $video.attr("data-url");

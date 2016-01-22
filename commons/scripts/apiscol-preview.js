@@ -1,4 +1,4 @@
-var cdnUrl = "http://apiscol.crdp-versailles.fr/cdn/";
+var cdnUrl = "http://apiscol.cdn.local/cdn/";
 function createStyleSheetLinkTag(href) {
 	var $docHeader = $("head");
 	var $styleSheetLink = $(document.createElement("link")).attr({
