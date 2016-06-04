@@ -1,4 +1,4 @@
-var cdnUrl = "http://apiscol.cdn.local/cdn/";
+var cdnUrl = "https://cdn.rawgit.com/ITOPEducation/apiscol-cdn/master/cdn/";
 function createStyleSheetLinkTag(href) {
 	var $docHeader = $("head");
 	var $styleSheetLink = $(document.createElement("link")).attr({
